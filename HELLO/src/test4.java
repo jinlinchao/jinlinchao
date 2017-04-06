@@ -56,7 +56,10 @@ public class test4 {
                 System.out.println("恭喜你答对了");
                 t++;
             }
-            else System.out.println("很遗憾，你答错了");
+            else {System.out.print("很遗憾，你答错了。正确答案是");
+                if(answer[0]%answer[1]==0)System.out.println(answer[0]/answer[1]);
+                else System.out.println(answer[0]+"/"+answer[1]);
+            }
         }
         System.out.println("答对"+t+"道题");
         double k=t*100.0/n;
